@@ -33,7 +33,7 @@ int find_root(int x,int count){
         group[x]=x;
         return x;
     }
-    int root=find_root(group[x],count+1);
+    int root=find_root(group[x],count+1);//將途中經過的所有人組別改成與源頭同一組
     
     group[x]=root;
     return root;
